@@ -9,51 +9,6 @@ const medicationCheckbox = document.getElementById('medication');
 const resultDiv = document.getElementById('result');
 const riskLevelSpan = document.getElementById('risk-level');
 
-// // Function to calculate stroke risk score
-// function calculateRiskScore1() {
-//     const age = document.getElementById('age').value;
-//     const gender = document.getElementById('gender').value;
-//     const sbp = document.getElementById('sbp').value;
-//     const ldl = document.getElementById('ldl').value;
-//     const hdl = document.getElementById('hdl').value;
-//     const smoker = document.getElementById('smoker').checked;
-
-//     console.log("age: %d", age);
-//     console.log("gender: %s", gender);
-//     console.log("sbp: %d", sbp);
-//     console.log("ldl: %d", ldl);
-//     console.log("hdl: %d", hdl);
-//     console.log("smoker is %s", smoker ? "true" : "false");
-  
-//     // // Calculate the risk score using the provided formula
-//     // let riskScore = 0.00674 * age + 0.482 * (gender === 'male' ? 1 : 0) +
-//     //                 0.03783 * sbp + 0.180 * (ldl / hdl) + (smoker ? 0.653 : 0);
-
-    
-//     // // Convert the risk score to a percentage
-//     // const riskPercentage = Math.round(riskScore * 100);
-    
-//     let riskScore = 0;
-    
-//     if (gender === 'male') {
-//         riskScore += 3.875 * Math.log(age) - 5.002 * Math.log(sbp) + 2.202 * Math.log(ldl) - 0.593 * Math.log(hdl) + 0.637 * smoker - 2.734;
-//     } 
-    
-//     else if (gender === 'female') {
-//         riskScore += 2.876 * Math.log(age) - 2.177 * Math.log(hdl) + 1.447 * Math.log(ldl) - 0.998 * Math.log(sbp) + 0.658 * smoker - 1.490;
-//     }
-    
-//     console.log("risk score: %f", riskScore);
-//     // Convert the risk score to a percentage
-//     let riskPercentage = Math.round(100 * (1 - Math.pow(0.983, Math.exp(riskScore)))) / 100;
-
-//     // Display the result section and the calculated risk score
-//     const resultSection = document.getElementById('result');
-//     resultSection.classList.remove('hidden');
-//     const riskScoreElement = document.getElementById('risk-score');
-//     riskScoreElement.textContent = riskPercentage;
-// }
-
 function calculateRiskScore() {
     // Get the input values
     const age = ageInput.value;
