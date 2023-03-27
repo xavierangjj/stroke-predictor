@@ -17,8 +17,22 @@
         <option value="female">Female</option>
       </select><br>
 
+      <label for="smoker">Smoker:</label>
+      <select id="smoker" name="smoker" required>
+        <option value="">--Select--</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br>
+
       <label for="sbp">Systolic Blood Pressure:</label>
       <input type="number" id="sbp" name="sbp" required><br>
+
+      <label for="medication">Medication:</label>
+      <select id="medication" name="medication" required>
+        <option value="">--Select--</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br>
 
       <label for="tc">Total Cholestrol:</label>
       <input type="number" id="tc" name="tc" required><br>
@@ -26,19 +40,13 @@
       <label for="hdl">HDL:</label>
       <input type="number" id="hdl" name="hdl" required><br>
 
-      <label for="smoker">Smoker:</label>
-      <input type="checkbox" id="smoker" name="smoker" value="yes"><br>
-
-      <label for="medication">On Medication (eg. Wafarin):</label>
-      <input type="checkbox" id="medication" name="medication" value="yes"><br>
-
       <button type="button" onclick="calculateRiskScore()">Calculate</button>
     </form>
-    <div id="result" class="hidden">
+    <!-- <div id="result" class="hidden">
       <h2>Stroke Risk Calculator Results</h2>
       <p>You are at <span id="risk-level"></span>.</p>
       <button type="button" onclick="reset()">Calculate Again</button>
-    </div>
+    </div> -->
     <script src="app.js"></script>
   </body>
 </html>

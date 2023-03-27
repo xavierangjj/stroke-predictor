@@ -16,8 +16,8 @@ function calculateRiskScore() {
     const sbp = sbpInput.value;
     const tc = tcInput.value;
     const hdl = hdlInput.value;
-    const smoker = smokerCheckbox.checked;
-    const medication = medicationCheckbox.checked;
+    const smoker = smokerCheckbox.value === "yes";
+    const medication = medicationCheckbox.value === "yes";
 
     // Calculate the risk score
     let riskScore = 0;
@@ -289,20 +289,17 @@ function calculateRiskScore() {
     
     console.log("risk score: %d", riskScore);
 
-    // Display the result
-    const resultSection = document.getElementById('result');
-    resultSection.classList.remove('hidden');
-
     let riskLevel = "";
 
     if (riskScore <= 10)
-        riskLevel = "Low Risk";
+        riskLevel = "low";
     else if (riskScore <= 17)
-        riskLevel = "Moderate Risk";
+        riskLevel = "moderate";
     else
-        riskLevel = "High Risk";
+        riskLevel = "high";
 
-    riskLevelSpan.textContent = riskLevel;
+    // Send results to result page.
+    window.location.href = 'results.html?risk=' + riskLevel;
 }
 
 // Function to reset the form

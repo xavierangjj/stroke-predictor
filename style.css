@@ -50,7 +50,60 @@
     letter-spacing: 1px;
   }
   
-  .hidden {
+  /* .hidden {
     display: none;
+  } */
+
+  #risk-level {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+  }
+    
+  .low {
+    color: green;
   }
   
+  .moderate {
+    color: orange;
+  }
+  
+  .high {
+    color: red;
+  }
+
+  #suggestions-str {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+  }
+
+  #suggestions {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+
+  .back-button {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }

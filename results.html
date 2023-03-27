@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stroke Risk Calculator Results</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Stroke Risk Calculator Results</h1>
+    <p><span id="risk-level"></span>.</p>
+    <p id="suggestions-str">Here are some suggestions for you:</p>
+    <div id="suggestions">
+      <button id="eat-button" onclick="thingsToEat()">Things to Eat Around You</button>
+      <button id="do-button" onclick="thingsToDo()">Things to Do Around You</button>
+      <button id="talk-button" onclick="peopleToTalkTo()">People to Talk To</button>
+      <button id="goal-button" onclick="goalSetting()">Goal Setting</button>
+    </div>
+    <button class="back-button" onclick="window.history.back()">Back to Calculator</button>
+  </body>
+  <script src="results.js"></script>
+</html>
