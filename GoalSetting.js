@@ -6,6 +6,7 @@ const goalForm = document.getElementById('goal-form');
 const goalInput = document.getElementById('goal-input');
 const deadlineInput = document.getElementById('deadline-input');
 const specificsInput = document.getElementById('specifics-input');
+const cancelBtn = document.getElementById('cancel-btn');
 
 // Initialize goals array
 let goals = [];
@@ -35,6 +36,13 @@ goalForm.addEventListener('submit', (event) => {
   goalFormContainer.style.display = 'none';
   goalForm.reset();
 });
+
+// Event listener for cancel button
+cancelBtn.addEventListener('click', () => {
+    // Hide goal form and reset form inputs
+    goalFormContainer.style.display = 'none';
+    goalForm.reset();
+  });
 
 // Function to display all goals in goals container
 function displayGoals() {

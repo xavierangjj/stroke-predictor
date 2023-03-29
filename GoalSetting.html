@@ -12,12 +12,17 @@
       <h2>Add New Goal</h2>
       <form id="goal-form">
         <label for="goal-input">Goal:</label>
+        <select name="specify" id="specify-dropdown">
+            <option value="diet-goal-option">Adhere to the recommended diet.</option>
+            <option value="activity-goal-option">Adhere to the recommended diet.</option>
+        </select>
         <input type="text" id="goal-input" required>
         <label for="deadline-input">Deadline:</label>
         <input type="date" id="deadline-input" required>
         <label for="specifics-input">Specifics:</label>
         <textarea id="specifics-input" required></textarea>
         <button type="submit">Submit</button>
+        <button type="button" id="cancel-btn">Cancel</button>
       </form>
     </div>
     <script src="GoalSetting.js"></script>

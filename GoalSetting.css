@@ -1,56 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
 h1 {
   text-align: center;
+  margin-top: 20px;
 }
 
 #add-goal-btn {
   display: block;
-  margin: 20px auto;
+  margin: 0 auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#add-goal-btn:hover {
+  background-color: #3e8e41;
 }
 
 #goals-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .goal {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   margin: 10px;
+  padding: 20px;
   width: 300px;
 }
 
-.goal h3 {
+.goal h2 {
+  font-size: 1.2em;
   margin-top: 0;
 }
 
 .goal p {
-  margin: 5px 0;
+  margin-top: 10px;
 }
 
 #goal-form-container {
   display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px;
   padding: 20px;
 }
 
 #goal-form-container h2 {
+  font-size: 1.5em;
   margin-top: 0;
 }
 
-#goal-form label,
-#goal-form input,
-#goal-form textarea {
-  display: block;
-  margin-bottom: 10px;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-#goal-form button {
+label {
   margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+button[type="submit"],
+button[type="button"] {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #3e8e41;
 }
