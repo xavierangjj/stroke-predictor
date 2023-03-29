@@ -27,15 +27,15 @@ switch (riskLevel) {
 }
 
 function thingsToEat() {
-    window.location.href = 'ThingsToEat.html'
+    window.location.href = 'https://xavierfortee.wixsite.com/strokepredictor'
 }
 
 function thingsToDo() {
-    window.location.href = "ThingsToDo.html";
+    window.location.href = "https://xavierfortee.wixsite.com/strokepredictor/what-to-do";
 }
 
 function peopleToTalkTo() {
-    window.location.href = "PeopleToTalkTo.html";
+    window.location.href = "https://xavierfortee.wixsite.com/strokepredictor/who-to-talk-to";
 }
 
 function goalSetting() {
