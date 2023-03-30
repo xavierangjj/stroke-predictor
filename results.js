@@ -41,3 +41,7 @@ function peopleToTalkTo() {
 function goalSetting() {
     window.location.href = "GoalSetting.html";
 }
+
+function returnToCalculator() {
+    window.location.href = "https://xavierangjj.github.io/stroke-predictor/"
+}

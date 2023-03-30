@@ -3,9 +3,11 @@ const addGoalBtn = document.getElementById('add-goal-btn');
 const goalsContainer = document.getElementById('goals-container');
 const goalFormContainer = document.getElementById('goal-form-container');
 const goalForm = document.getElementById('goal-form');
-const goalInput = document.getElementById('goal-input');
+const goalInput = document.getElementById('specify-goal-dropdown');
+const quantifyInput = document.getElementById('specify-quantify-dropdown');
+const whenInput = document.getElementById('specify-when-dropdown');
 const deadlineInput = document.getElementById('deadline-input');
-const specificsInput = document.getElementById('specifics-input');
+// const specificsInput = document.getElementById('specifics-input');
 const cancelBtn = document.getElementById('cancel-btn');
 
 // Initialize goals array
@@ -24,8 +26,9 @@ goalForm.addEventListener('submit', (event) => {
   // Create new goal object with form values
   const goal = {
     goal: goalInput.value,
+    quantify: quantifyInput.value,
+    when: whenInput.value,
     deadline: deadlineInput.value,
-    specifics: specificsInput.value
   };
 
   // Add new goal to goals array and display all goals
@@ -54,10 +57,12 @@ function displayGoals() {
     const goalElement = document.createElement('div');
     goalElement.classList.add('goal');
     goalElement.innerHTML = `
-      <h3>Goal ${index + 1}</h3>
+      <h2>Goal ${index + 1}</h3>
+      <h3>In Progress...</h3>
       <p><strong>Goal:</strong> ${goal.goal}</p>
+      <p><strong>Quantify:</strong> ${goal.quantify}</p>
+      <p><strong>When:</strong> ${goal.when}</p>
       <p><strong>Deadline:</strong> ${goal.deadline}</p>
-      <p><strong>Specifics:</strong> ${goal.specifics}</p>
     `;
     goalsContainer.appendChild(goalElement);
   });

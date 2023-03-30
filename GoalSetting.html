@@ -7,20 +7,36 @@
   <body>
     <h1>Goal Setting Page</h1>
     <button id="add-goal-btn">Add Goal</button>
+    <!-- <button class="back-button" onclick="window.history.back()">Back</button> -->
     <div id="goals-container"></div>
     <div id="goal-form-container">
       <h2>Add New Goal</h2>
       <form id="goal-form">
         <label for="goal-input">Goal:</label>
-        <select name="specify" id="specify-dropdown">
-            <option value="diet-goal-option">Adhere to the recommended diet.</option>
-            <option value="activity-goal-option">Adhere to the recommended diet.</option>
+        <select name="specify-goal" id="specify-goal-dropdown">
+            <option value="select-goal-option">-- Select --</option>
+            <option value="Adhere to the recommended diet.">Adhere to the recommended diet.</option>
+            <option value="Participate in the recommended activities.">Participate in the recommended activities.</option>
         </select>
-        <input type="text" id="goal-input" required>
-        <label for="deadline-input">Deadline:</label>
+        <label for="quantify-input">Quantify:</label>
+        <select name="specify-quantify" id="specify-quantify-dropdown">
+          <option value="select-quantify-option">-- Select --</option>
+          <option value="Once a week">Once a week</option>
+          <option value="Twice a week">Twice a week</option>
+          <option value="3 times a week">3 times a week</option>
+          <option value="4 times a week">4 times a week</option>
+          <option value="5 times a weekn">5 times a week</option>
+          <option value="6 times a week">6 times a week</option>
+          <option value="For the whole week">For the whole week</option>
+        </select>
+        <label for="when-input">When I Am:</label>
+        <select name="specify-when" id="specify-when-dropdown">
+          <option value="Working from home">Working from home</option>
+          <option value="At Work">At work</option>
+          <option value="At Home">At home</option>
+        </select>
+        <label for="deadline-input">By:</label>
         <input type="date" id="deadline-input" required>
-        <label for="specifics-input">Specifics:</label>
-        <textarea id="specifics-input" required></textarea>
         <button type="submit">Submit</button>
         <button type="button" id="cancel-btn">Cancel</button>
       </form>
