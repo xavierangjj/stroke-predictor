@@ -3,8 +3,10 @@
   <head>
     <title>Stroke Risk Calculator Results</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e1b8ab9ab.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <h1><span class="fa-solid fa-volume-low"></span></h1>
     <h1>Stroke Risk Calculator Results</h1>
     <p><span id="risk-level"></span>.</p>
     <p id="suggestions-str">Here are some suggestions for you:</p>
@@ -15,6 +17,7 @@
       <button id="goal-button" onclick="goalSetting()">Goal Setting</button>
     </div>
     <button class="back-button" onclick="window.history.back()">Back to Calculator</button>
+    <p id="info-str">For more information, visit <a href="https://www.healthhub.sg/programmes/130/strokehub">Strokehub</a> and <a href="https://www.healthhub.sg/a-z/diseases-and-conditions/673/stroke-emergency"> How to spot stroke & What to do</a> when stroke happens.</p>
   </body>
   <script src="results.js"></script>
 </html>

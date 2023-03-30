@@ -95,6 +95,12 @@
     text-transform: uppercase;
   }
 
+  #info-str {
+    font: 16px;
+    text-align: center;
+    justify-content: center;
+  }
+
   #suggestions {
     margin-top: 20px;
     border-top: 1px solid #ccc;
@@ -113,4 +119,8 @@
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+  }
+
+  .fa-solid {
+    color: rgb(78, 112, 139);
   }
